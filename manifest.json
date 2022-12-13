@@ -1,0 +1,26 @@
+{
+  "name": "Chatgpt-Extensions",
+  "action": {
+    "default_icon": "images/icon.png"
+  },
+  "icons": {
+      "16": "images/icon.png",
+      "32": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+  },
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Chatgpt-Extensions Sample",
+  "permissions": [
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/chat"],
+      "js": ["background.js"]
+    }
+  ]
+}
+
+
